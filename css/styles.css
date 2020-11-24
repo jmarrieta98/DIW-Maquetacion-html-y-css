@@ -3,19 +3,20 @@
     --color-verde: #A2FF91;
 }
 
-html, body{
-    display: flex;
-    flex-direction: column;
-
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
 }
 
 /*Header y nav*/
-.menu{
+.cabecera{
     background-color: var(--color-lila);
     color: white;
     display: flex;
     justify-content: space-between;
-    padding-right: 5px;
+    padding: 0 10px;
 
 }
 
@@ -37,15 +38,17 @@ html, body{
 .cuerpo{
     display: flex;
     justify-content: space-between;
-    align-items: center;;
+    align-items: center;
+    min-height: 85vh;
+    padding: 0 10px;
     
 }
 
 section{
     width: 50%;
-    padding: 0.5%;
-    text-align: center;
+    padding: 2rem;
 }
+
 .imagen-G{
     width: 50vw;
 }
@@ -54,13 +57,15 @@ section{
     width: 50px;
     height: 45px;
 }
+
 .titulo{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--color-lila);
 }
 
 .texto{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    text-align: left;
 }
 
 .boton{
