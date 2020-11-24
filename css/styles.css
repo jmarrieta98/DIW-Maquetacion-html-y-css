@@ -6,9 +6,7 @@
 html, body{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin: 0pt;
-    align-content:  center;
+
 }
 
 /*Header y nav*/
