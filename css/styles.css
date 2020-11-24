@@ -1,3 +1,5 @@
+/* La Metodolgía usada es OOCSS que consiste en crear objetos generales para poder usarlos en varias partes*/
+/* Definición de varaibles y cuerpo*/
 :root{
     --color-lila:  #543372;
     --color-verde: #A2FF91;
@@ -10,7 +12,7 @@ body{
     font-size: 20px;
 }
 
-/*Header y nav*/
+/*Definiciones de la cabecera*/
 .cabecera{
     background-color: var(--color-lila);
     color: white;
@@ -32,8 +34,23 @@ body{
     margin-left: 20px;
 }
 
-/*Main Principal*/
+/*Definiciones del pie de página*/
+.pie{
+    background-color: var(--color-verde);
+    padding-right: 5px;
+    padding-left: 5px;
 
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-derecha{
+    text-align: right;
+}
+
+/*Definiciones generales
 
 .cuerpo{
     display: flex;
@@ -75,20 +92,4 @@ section{
     height: 30px;
     border-radius: 10px;
     border-color: var(--color-verde);
-}
-
-/*Footer*/
-.pie{
-    background-color: var(--color-verde);
-    padding-right: 5px;
-    padding-left: 5px;
-
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.contenedor-derecha{
-    text-align: right;
 }
