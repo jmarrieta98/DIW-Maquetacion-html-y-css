@@ -1,5 +1,5 @@
 /* La Metodolgía usada es OOCSS que consiste en crear objetos generales para poder usarlos en varias partes*/
-/* Definición de varaibles y cuerpo*/
+/* Definición de variables y cuerpo*/
 :root{
     --color-lila:  #543372;
     --color-verde: #A2FF91;
@@ -19,6 +19,7 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
+    height: 7vh;
 
 }
 
@@ -37,10 +38,9 @@ body{
 /*Definiciones del pie de página*/
 .pie{
     background-color: var(--color-verde);
-    padding-right: 5px;
-    padding-left: 5px;
-
-    
+    padding: 0 5px;
+    height: 10vh;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,20 +50,24 @@ body{
     text-align: right;
 }
 
-/*Definiciones generales
+.parrafo-pie{
+    margin: 0;
+}
+
+/*Definiciones generales*/
 
 .cuerpo{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 85vh;
-    padding: 0 10px;
+    min-height: 83vh;
+
     
 }
 
-section{
+.seccion-50{
     width: 50%;
-    padding: 2rem;
+    padding: 0 2em;
 }
 
 .imagen-G{
@@ -76,13 +80,18 @@ section{
 }
 
 .titulo{
-    font-size: 2rem;
+    font-size: 3 em;
+    text-align: center;
     color: var(--color-lila);
 }
 
 .texto{
-    font-size: 1.5rem;
+    font-size: 1.5 em;
     text-align: left;
+}
+
+.texto-P{
+    font-size: 0.5em;
 }
 
 .boton{
@@ -92,4 +101,17 @@ section{
     height: 30px;
     border-radius: 10px;
     border-color: var(--color-verde);
+}
+
+.registro1{
+    width: 50vw;
+    height: 83vh;
+    padding: 0 10px;
+    background-color: yellowgreen;
+}
+.registro2{
+    width: 50vw;
+    height: 83vh;
+    padding: 0 10px;
+    background-color: yellow;
 }
