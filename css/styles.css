@@ -12,6 +12,17 @@ body{
     font-size: 20px;
 }
 
+form{
+    width: 35vw;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-color: var(--color-lila)
+}
+
 /*Definiciones de la cabecera*/
 .cabecera{
     background-color: var(--color-lila);
@@ -19,14 +30,22 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
+    min-height: 50px;
     height: 7vh;
 
+}
+
+.navegador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .lista-menu {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
+    margin: 0;
 }
 
 .enlace-menu{
@@ -58,11 +77,10 @@ body{
 
 .cuerpo{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     min-height: 83vh;
-
-    
+    /* height: 100vh; */
 }
 
 .seccion-50{
@@ -73,6 +91,18 @@ body{
 .imagen-G{
     width: 50vw;
 }
+
+.contenedor-busqueda{
+    background-image: url("../img/campamento.png");
+    background-size: 100vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+}
+
 
 .logo{
     width: 50px;
@@ -103,15 +133,41 @@ body{
     border-color: var(--color-verde);
 }
 
-.registro1{
-    width: 50vw;
-    height: 83vh;
-    padding: 0 10px;
-    background-color: yellowgreen;
+.input-N{
+    width: 100%;
+    height: 25px;
+    border-color: var(--color-verde);
 }
-.registro2{
-    width: 50vw;
-    height: 83vh;
+
+.registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 35%;
     padding: 0 10px;
-    background-color: yellow;
+}
+
+.olvidar-contraseña{
+    color: blue;
+    text-align: center;
+}
+
+.contenedor{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.contenedor-formulario{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+.captcha{
+    border: 1px solid;
+    border-color: var(--color-verde);
 }
