@@ -1,18 +1,20 @@
 /* La Metodolgía usada es OOCSS que consiste en crear objetos generales para poder usarlos en varias partes*/
+
 /* Definición de variables y cuerpo*/
-:root{
-    --color-lila:  #543372;
+
+:root {
+    --color-lila: #543372;
     --color-verde: #A2FF91;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 20px;
 }
 
-form{
+form {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -21,7 +23,8 @@ form{
 }
 
 /*Definiciones de la cabecera*/
-.cabecera{
+
+.cabecera {
     background-color: var(--color-lila);
     color: white;
     display: flex;
@@ -29,10 +32,9 @@ form{
     padding: 0 10px;
     min-height: 50px;
     height: 7vh;
-
 }
 
-.navegador{
+.navegador {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,17 +44,54 @@ form{
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
-    margin: 0;
+    margin: 0px;
 }
 
-.enlace-menu{
+.enlace-menu {
     text-decoration: none;
     color: unset;
     margin-left: 20px;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/*Menu desplegable*/
+
+.menu-movil{
+    display: none;
+}
+
+.enlace-menu-movil {
+    text-decoration: none;
+    color: unset;
+    margin-left: 20px;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 500px){
+    .enlace-menu{
+        display: none;
+    }
+    .menu-movil{
+        padding: 0px;
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
 }
 
 /*Definiciones del pie de página*/
-.pie{
+
+.pie {
     background-color: var(--color-verde);
     padding: 0 5px;
     height: 10vh;
@@ -62,66 +101,64 @@ form{
     align-items: center;
 }
 
-.contenedor-derecha{
+.contenedor-derecha {
     text-align: right;
 }
 
-.parrafo-pie{
+.parrafo-pie {
     margin: 0;
 }
 
 /*Definiciones generales*/
 
-.cuerpo{
+.cuerpo {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     min-height: 83vh;
 }
 
-.cuerpo-columna{
+.cuerpo-columna {
     flex-direction: column;
     justify-content: unset;
 }
 
-.seccion-50{
+.seccion-50 {
     width: 50%;
     padding: 0 2em;
 }
 
-.imagen-G{
+.imagen-G {
     width: 50vw;
 }
 
-.tabla{
+.tabla {
     border-collapse: collapse;
     width: 80%;
     border: 1px solid;
     border-color: var(--color-lila);
 }
 
-
-.logo{
-    width: 50px;
-    height: 45px;
+.logo {
+    width: 3.5rem;
 }
 
-.titulo{
+.titulo {
     font-size: 3 em;
     text-align: center;
     color: var(--color-lila);
 }
 
-.texto{
+.texto {
     font-size: 1.5 em;
     text-align: left;
 }
 
-.texto-P{
+.texto-P {
     font-size: 0.5em;
 }
 
-.boton{
+.boton {
     color: var(--color-lila);
     background-color: var(--color-verde);
     width: 100px;
@@ -131,26 +168,26 @@ form{
     text-align: center;
 }
 
-.boton-Grande{
+.boton-Grande {
     width: 200px;
     height: 50px;
     border-radius: 15px;
     font-size: 1em;
 }
 
-.input-N{
+.input-N {
     width: 100%;
     height: 25px;
     border-color: var(--color-verde);
 }
 
-.input-G{
+.input-G {
     width: 40%;
     height: 50px;
     border-color: var(--color-verde);
 }
 
-.registro{
+.registro {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,12 +197,12 @@ form{
     padding: 0 10px;
 }
 
-.olvidar-contraseña{
+.olvidar-contraseña {
     color: blue;
     text-align: center;
 }
 
-.contenedor{
+.contenedor {
     width: 100%;
     margin: 10px 0;
     text-align: center;
@@ -174,76 +211,82 @@ form{
     align-items: center;
 }
 
-.contenedor-formulario{
+.contenedor-formulario {
     width: 30vw;
     margin: 10px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
-.contenedor-cabecera{
+.contenedor-cabecera {
     background-image: url("../img/campamento.png");
     background-size: 100vw;
     color: white;
-    
     justify-content: center;
     width: 100%;
     margin: 0px;
 }
 
-.contenedor-busqueda{
-    justify-content:space-around;
+.contenedor-busqueda {
+    justify-content: space-around;
 }
 
-.captcha{
+.captcha {
     border: 1px solid;
     border-color: var(--color-verde);
 }
 
+.contenedor-tabla {
+    width: 100%;
+    min-height: 30vw;
+    ;
+}
 
-
-.contenedor-tabla{
+.contenedor-seccion {
     flex-direction: column;
     justify-content: space-evenly;
 }
-@media screen and (max-width: 768px){
-    .cuerpo{
-        display: flex;
+
+@media screen and (max-width: 768px) {
+    .cuerpo {
         flex-direction: column;
-        align-items: center;
-        min-height: 83vh;
-        width: 100%;
     }
-    .seccion-50{
+    .seccion-50 {
         width: 75vw;
     }
-    .registro{
+    .registro {
         width: 75vw;
         font-size: 0.8rem;
     }
-    html{
+    html {
         width: 100vw;
     }
-    .contenedor-busqueda{
+    .contenedor-busqueda {
         flex-direction: column;
         display: flexbox;
     }
-    .input-G{
+    .input-G {
         width: 300px;
         margin-bottom: 10px;
     }
-    .imagen-G{
+    .imagen-G {
         width: 80vw;
     }
-    .parrafo-pie{
+    .parrafo-pie {
         font-size: 0.8rem;
     }
-    .enlace-menu{
+    .enlace-menu {
+        font-size: 0.70rem;
+        padding: 4px 6px;
+    }
+    .lista-menu{
+        padding: 0px;
+    }
+    .tabla {
         font-size: 0.8rem;
     }
-    .tabla{
-        font-size: 0.8rem;
+    .imagen-G{
+        margin-top: 5px;
     }
 }

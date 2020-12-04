@@ -11,12 +11,20 @@
 
 <body>
     <header class="cabecera">
-        <a href="./index.html"><img src="img/logo2.png" alt="logo blanco" class="logo"></a> 
+        <a href="./index.html"><img src="img/logo2.png" alt="logo blanco" class="logo"></a>
         <nav class="navegador">
             <ul class="lista-menu">
                 <li><a href="#" class="enlace-menu"><span class="fas fa-align-justify"></span> SOBRE NOSOTROS</a></li>
                 <li><a href="#" class="enlace-menu"><span class="fab fa-wpforms"></span> PREINSCRIPCION</a></li>
-                <li><a href="./registro.html" class="enlace-menu"><span class="fas fa-user-friends"></span> INICIO REGISTRO</a></li>
+                <li><a href="./registro.html" class="enlace-menu"><span class="fas fa-user-friends"></span> INICIO
+                        REGISTRO</a></li>
+                <li>
+                    <ul class="menu-movil">
+                        <li><a href="#" class="enlace-menu-movil"><span class="fas fa-align-justify"></span></a></li>
+                        <li><a href="#" class="enlace-menu-movil"><span class="fab fa-wpforms"></span></a></li>
+                        <li><a href="./registro.html" class="enlace-menu-movil"><span class="fas fa-user-friends"></span></a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
@@ -42,7 +50,7 @@
             <div class="contenedor">
                 <button class="boton"><b>INSCRÍBETE</b></button>
             </div>
-            
+
         </section>
     </main>
     <footer class="pie">
@@ -55,6 +63,16 @@
             <p class="parrafo-pie">Términos de uso</p>
             <p class="parrafo-pie">123 456 789 gschiclana@scout.com</p>
         </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
     </footer>
 </body>
 
