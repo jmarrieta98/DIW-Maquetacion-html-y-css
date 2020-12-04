@@ -207,22 +207,21 @@ form{
 .contenedor-tabla{
     flex-direction: column;
     justify-content: space-evenly;
-    height: 60vh;
 }
 @media screen and (max-width: 768px){
     .cuerpo{
         display: flex;
-        justify-content: space-between;
         flex-direction: column;
         align-items: center;
         min-height: 83vh;
-        width: 100vw;
+        width: 100%;
     }
     .seccion-50{
         width: 75vw;
     }
     .registro{
         width: 75vw;
+        font-size: 0.8rem;
     }
     html{
         width: 100vw;
@@ -237,5 +236,14 @@ form{
     }
     .imagen-G{
         width: 80vw;
+    }
+    .parrafo-pie{
+        font-size: 0.8rem;
+    }
+    .enlace-menu{
+        font-size: 0.8rem;
+    }
+    .tabla{
+        font-size: 0.8rem;
     }
 }
