@@ -93,15 +93,11 @@ form{
     width: 50vw;
 }
 
-.contenedor-busqueda{
-    background-image: url("../img/campamento.png");
-    background-size: 100vw;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    width: 100%;
+.tabla{
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid;
+    border-color: var(--color-lila);
 }
 
 
@@ -139,6 +135,7 @@ form{
     width: 200px;
     height: 50px;
     border-radius: 15px;
+    font-size: 1em;
 }
 
 .input-N{
@@ -186,21 +183,59 @@ form{
 
 }
 
+.contenedor-cabecera{
+    background-image: url("../img/campamento.png");
+    background-size: 100vw;
+    color: white;
+    
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+}
+
+.contenedor-busqueda{
+    justify-content:space-around;
+}
 
 .captcha{
     border: 1px solid;
     border-color: var(--color-verde);
 }
 
-.tabla{
-    border-collapse: collapse;
-    width: 80%;
-    border: 1px solid;
-    border-color: var(--color-lila);
-}
+
 
 .contenedor-tabla{
     flex-direction: column;
     justify-content: space-evenly;
     height: 60vh;
+}
+@media screen and (max-width: 768px){
+    .cuerpo{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        min-height: 83vh;
+        width: 100vw;
+    }
+    .seccion-50{
+        width: 75vw;
+    }
+    .registro{
+        width: 75vw;
+    }
+    html{
+        width: 100vw;
+    }
+    .contenedor-busqueda{
+        flex-direction: column;
+        display: flexbox;
+    }
+    .input-G{
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    .imagen-G{
+        width: 80vw;
+    }
 }
