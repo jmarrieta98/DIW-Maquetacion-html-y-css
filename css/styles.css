@@ -129,7 +129,10 @@ form {
 }
 
 .imagen-G {
-    width: 50vw;
+    width: 40vw;
+}
+.imagen-M {
+    width: 20vw;
 }
 
 .tabla {
@@ -187,6 +190,10 @@ form {
     border-color: var(--color-verde);
 }
 
+textarea{
+    width: 500px;
+}
+
 .registro {
     display: flex;
     flex-direction: column;
@@ -213,10 +220,9 @@ form {
 
 .contenedor-formulario {
     width: 30vw;
-    margin: 10px 0;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: unset;
 }
 
 .contenedor-cabecera {
@@ -224,7 +230,6 @@ form {
     background-size: 100vw;
     color: white;
     justify-content: center;
-    width: 100%;
     margin: 0px;
 }
 
@@ -262,13 +267,21 @@ form {
     html {
         width: 100vw;
     }
+    .contenedor{
+        flex-direction: column;
+    }
     .contenedor-busqueda {
         flex-direction: column;
         display: flexbox;
     }
-    .input-G {
-        width: 300px;
-        margin-bottom: 10px;
+    .contenedor-formulario{
+        width: 90%;
+    }
+    .input-N{
+        width:  100%;
+    }
+    textarea{
+        width: 250px;
     }
     .imagen-G {
         width: 80vw;
@@ -288,5 +301,8 @@ form {
     }
     .imagen-G{
         margin-top: 5px;
+    }
+    .imagen-M{
+        width: 20vw;
     }
 }
