@@ -320,3 +320,6 @@ textarea{
         font-size: 1em;
     }
 }
+.modo-oscuro{
+    background-color: grey;
+}
