@@ -121,6 +121,8 @@ form {
     padding: 0 2em;
 }
 
+
+
 .imagen-G {
     width: 40vw;
 }
@@ -187,21 +189,19 @@ textarea{
     width: 500px;
 }
 
-.registro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid;
-    border-color: var(--color-lila);
-    width: 35%;
-    padding: 0 10px;
-}
+
 
 .olvidar-contraseña {
     color: blue;
     text-align: center;
 }
 
+.captcha {
+    border: 1px solid;
+    border-color: var(--color-verde);
+}
+
+/*Creación de contenedores a partir de uno general*/
 .contenedor {
     width: 100%;
     margin: 10px 0;
@@ -230,11 +230,6 @@ textarea{
     justify-content: space-around;
 }
 
-.captcha {
-    border: 1px solid;
-    border-color: var(--color-verde);
-}
-
 .contenedor-tabla {
     width: 100%;
     min-height: 30vw;
@@ -246,6 +241,17 @@ textarea{
     justify-content: space-evenly;
 }
 
+.contenedor-registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+    border-color: var(--color-lila);
+    width: 35%;
+    padding: 0 10px;
+}
+
+/*Media Query para adaptar la pagina a responsive*/
 @media screen and (max-width: 768px) {
     .cuerpo {
         flex-direction: column;
@@ -253,7 +259,7 @@ textarea{
     .seccion-50 {
         width: 75vw;
     }
-    .registro {
+    .contenedor-registro {
         width: 75vw;
         font-size: 0.8rem;
     }
@@ -302,7 +308,7 @@ textarea{
         width: 20vw;
     }
 }
-
+/*Media Query para cambiar de menu y hacer las letras y titulos mas chicos*/
 @media screen and (max-width: 500px){
     .enlace-menu{
         display: none;
@@ -320,6 +326,7 @@ textarea{
         font-size: 1em;
     }
 }
+
 .modo-oscuro{
     background-color: grey;
 }
