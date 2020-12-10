@@ -77,18 +77,6 @@ form {
     font-size: 17px;
 }
 
-@media screen and (max-width: 500px){
-    .enlace-menu{
-        display: none;
-    }
-    .menu-movil{
-        padding: 0px;
-        display: flex;
-        justify-content: space-evenly;
-        list-style-type: none;
-    }
-}
-
 /*Definiciones del pie de página*/
 
 .pie {
@@ -99,6 +87,11 @@ form {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.pie-blanco{
+    background-color: white;
+    justify-content: space-evenly;
 }
 
 .contenedor-derecha {
@@ -147,13 +140,13 @@ form {
 }
 
 .titulo {
-    font-size: 3 em;
+    font-size: 3em;
     text-align: center;
     color: var(--color-lila);
 }
 
 .texto {
-    font-size: 1.5 em;
+    font-size: 1.5em;
     text-align: left;
 }
 
@@ -272,7 +265,7 @@ textarea{
     }
     .contenedor-busqueda {
         flex-direction: column;
-        display: flexbox;
+        display:inline-flex;
     }
     .contenedor-formulario{
         width: 90%;
@@ -280,11 +273,13 @@ textarea{
     .input-N{
         width:  100%;
     }
+    .input-G{
+        width: 80%;
+        margin-bottom: 10px;
+        
+    }
     textarea{
         width: 250px;
-    }
-    .imagen-G {
-        width: 80vw;
     }
     .parrafo-pie {
         font-size: 0.8rem;
@@ -300,9 +295,28 @@ textarea{
         font-size: 0.8rem;
     }
     .imagen-G{
+        width: 80vw;
         margin-top: 5px;
     }
     .imagen-M{
         width: 20vw;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .enlace-menu{
+        display: none;
+    }
+    .menu-movil{
+        padding: 0px;
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+    .titulo{
+        font-size: 2em;
+    }
+    .texto{
+        font-size: 1em;
     }
 }
